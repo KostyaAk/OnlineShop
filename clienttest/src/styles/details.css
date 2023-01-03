@@ -1,0 +1,28 @@
+.star-rating {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    text-align: center;
+    max-width: max-content;
+    max-height: max-content;
+  }
+  
+.star-rating-icon {
+      float: right;
+      padding-right: 2px;
+      cursor: pointer;
+}
+  
+.star-rating-icon:last-child {
+      padding-right: 2px;
+}
+  
+.star-rating-input {
+      display: none;
+}
+
+.star-rating-icon:hover:before,
+.star-rating-icon:hover ~ .star-rating-icon:before,
+.star-rating-input:checked ~ .star-rating-icon:before {
+      color: yellow;
+}
